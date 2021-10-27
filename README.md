@@ -23,6 +23,10 @@ The directory [Dreamer](./Dreamer) contains code for running DMC experiments. Th
 Get dependencies:
 
 ```sh
+sudo apt install ffmpeg
+```
+
+```sh
 pip3 install --user tensorflow-gpu==2.3.1
 pip3 install --user tensorflow_probability==0.11.0
 pip3 install --user gym
