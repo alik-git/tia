@@ -65,7 +65,7 @@ You will need an active Mujoco license for running DMC experiments. Use the step
 
 First create a `.mujoco` directory in your home folder.
 
-Download mujoco from here, and then extract the `mujoco_versionnumber` folder into the `.mujoco` directory in your home folder. So the installation result should look like `~/.mujoco/mujoco_versionnumber`
+Download mujoco from [here](https://mujoco.org/download), and then extract the `mujoco_versionnumber` folder into the `.mujoco` directory in your home folder. So the installation result should look like `~/.mujoco/mujoco_versionnumber`
 
 Now you still need the `dm_control` repo command from above, so run:
 ```sh
