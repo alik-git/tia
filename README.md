@@ -47,7 +47,7 @@ You will also need ffmpeg for this
 sudo apt install ffmpeg
 ```
 
-You can skip these commands below if the `pip install` command worked for you above.
+You can skip these commands below (except `dm_control` see further instructions) if the `pip install` command worked for you above.
 
 ```sh
 pip3 install --user tensorflow-gpu==2.3.1
@@ -63,8 +63,14 @@ pip3 install --user 'gym[atari]'
 
 You will need an active Mujoco license for running DMC experiments. Use the steps below to install:
 
+First create a `.mujoco` directory in your home folder.
 
-However, you will still need mujoco to work. Download it from here, and then extrat the mujoco_versionnumber folder and place it in a `.mujoco` directory in your home folder. So the installation result should look like `~/.mujoco/mujoco_versionnumber`
+Download mujoco from here, and then extract the `mujoco_versionnumber` folder into the `.mujoco` directory in your home folder. So the installation result should look like `~/.mujoco/mujoco_versionnumber`
+
+Now you still need the `dm_control` repo command from above, so run:
+```sh
+pip3 install --user git+git://github.com/deepmind/dm_control.git
+```
 
 
 ## Running DMC experiments with distracting background
