@@ -37,7 +37,7 @@ conda activate tia
 then, install the requirments with:
 
 ```sh
-pip install -r reqirements.txt
+pip install -r requirments.txt
 ```
 
 
