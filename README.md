@@ -91,6 +91,11 @@ Train the agent:
 python run.py --method dreamer --configs dmc --task dmc_cheetah_run_driving --logdir ~/logdir --video_dir VIDPATH
 ```
 
+Ali's example command:
+```sh
+python run.py --method dreamer --configs dmc --task dmc_cheetah_run_driving --logdir ../logs_dir --video_dir ../datasets/driving_car_16
+```
+
 `VIDPATH` should contains `*.mp4` video files. (if you used the above repo to download the Kinetics videos, you should set `VIDPATH` to `PATH_TO_REPO/kinetics-downloader/dataset/train/driving_car`)
 
 
