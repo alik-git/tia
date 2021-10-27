@@ -1,3 +1,5 @@
+ALI's FORK
+
 # Learning Task Informed Abstractions (TIA)
 
 <sub>Left to right: Raw Observation, Dreamer, Joint of TIA, Task Stream of TIA, Distractor Stream of TIA</sub>
