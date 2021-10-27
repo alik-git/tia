@@ -2,4 +2,6 @@ __pycache__/
 *.py[cod]
 *.egg-info
 ./dist
+datasets
+logs_dir
 MUJOCO_LOG.TXT
