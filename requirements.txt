@@ -1,0 +1,22 @@
+# absl
+absl_py
+dm_control
+dm_env
+gym
+lxml
+matplotlib
+mock
+numpy
+opencv_python
+Pillow
+PyYAML
+ruamel.base
+scikit_image
+scipy
+six
+sk_video
+# skimage
+tensorflow
+tensorflow_gpu
+tensorflow_probability
+tqdm
