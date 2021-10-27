@@ -15,6 +15,7 @@ Xiang Fu*, Ge Yang*, Pulkit Agrawal, Tommi Jaakkola
 
 ICML 2021 [[website]](https://xiangfu.co/tia) [[paper]](https://arxiv.org/abs/2106.15612)
 
+**Correction: Use Python 3.7**
 
 The directory [Dreamer](./Dreamer) contains code for running DMC experiments. The directory [DreamerV2](./DreamerV2) contains code for running Atari experiments. This implementation is tested with Python 3.6, Tensorflow 2.3.1 and CUDA 10.1. The training/evaluation metrics used for producing the figures in the paper can be downloaded from [this Google Drive link](https://drive.google.com/file/d/1wvSp9Q7r2Ah5xRE_x3nJy-uwLkjF2RgX/view?usp=sharing).
 
@@ -22,9 +23,31 @@ The directory [Dreamer](./Dreamer) contains code for running DMC experiments. Th
 
 Get dependencies:
 
+First make a virtual enviroment for python. If you don't have it, install Anaconda, and then run:
+
+```sh
+conda create --name tia python=3.7
+```
+
+then activate it with
+```sh
+conda activate tia
+```
+
+then, install the requirments with:
+
+```sh
+pip install -r reqirements.txt
+```
+
+
+You will also need ffmpeg for this
+
 ```sh
 sudo apt install ffmpeg
 ```
+
+You can skip these commands below if the `pip install` command worked for you above.
 
 ```sh
 pip3 install --user tensorflow-gpu==2.3.1
@@ -37,7 +60,12 @@ pip3 install --user scikit-image
 pip3 install --user git+git://github.com/deepmind/dm_control.git
 pip3 install --user 'gym[atari]'
 ```
-You will need an active Mujoco license for running DMC experiments. 
+
+You will need an active Mujoco license for running DMC experiments. Use the steps below to install:
+
+
+However, you will still need mujoco to work. Download it from here, and then extrat the mujoco_versionnumber folder and place it in a `.mujoco` directory in your home folder. So the installation result should look like `~/.mujoco/mujoco_versionnumber`
+
 
 ## Running DMC experiments with distracting background
 
