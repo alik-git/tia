@@ -72,6 +72,27 @@ Now you still need the `dm_control` repo command from above, so run:
 pip3 install --user git+git://github.com/deepmind/dm_control.git
 ```
 
+You will also need to install cuda if you have an NVIDIA GPU, this makes the training go way faster.
+
+I found [this](https://towardsdatascience.com/installing-tensorflow-gpu-in-ubuntu-20-04-4ee3ca4cb75d) article helpful. But you might run into issues as cuda and linux is complicated. Here is what worked for me:
+
+First, you want anaconda to have its own cuda installation, so install it via this command (and note that we are using a specific version that's compatible with our version of tensorflow):
+```sh
+conda install cudatoolkit=10.2
+```
+and then you will need some drivers:
+```sh
+conda install cudnn
+```
+Trying skipping ahead with just those ^ commands for now. If you have problems, come back and install cuda locally as well.
+
+To install cuda locally you can do:
+```sh
+sudo apt install cuda-10-1
+sudo apt install libcudnn7
+sudo apt install nvidia-cuda-toolkit
+```
+
 
 ## Running DMC experiments with distracting background
 
